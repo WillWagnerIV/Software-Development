@@ -71,8 +71,6 @@ def ListNoVar (n):
 #  Generate Fib numbers using recursion
 def RecursiveFib (n):
 
-    n = int(n)
-
     if n <= 1:
         return n
     else:
