@@ -48,4 +48,4 @@ for wcRound in world_cup:
             else:
                 france.append (game[0])
 
-print ("Teams that lost to france: ", france)
+print ("Teams that lost to France: ", france)
