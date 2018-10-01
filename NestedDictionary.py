@@ -35,12 +35,13 @@ ex_f_animals = set()
 
 #  Create the Sets: animals, m_animals, and ex_f_animals
 for name in nest_dict:
+
     for animal in nest_dict[name]['Favorite Animals']:
 
         if animal not in animals:
             animals.add(animal)
 
-        if nest_dict[name]['Gender'] == "M":
+        if ((nest_dict[name]['Gender'] == "M") & (animal not in m_animals)):
             m_animals.add (animal)
 
         if nest_dict[name]['Gender'] == "F":
