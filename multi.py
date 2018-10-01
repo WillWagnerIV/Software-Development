@@ -40,6 +40,7 @@ def test_00():
 
 
 def Multiply(i, j):
+    assert i*j == multi_table[i][j]
     return multi_table[i][j]
 
 
