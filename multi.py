@@ -39,11 +39,43 @@ def test_00():
     assert multi_table[0][0] == 'X'
 
 
-print()
-print(f"{' {:^79} '.format('    12 x 12 Multiplication Table     ')}")
-print(f"{' {:-^79}'.format('')}")
-for row in range(len(multi_table)):
-    for column in multi_table[row]:
-        print(f"{' | {:>3}'.format(column)}", end='')
-    print(' |')
+def Multiply(i, j):
+    return multi_table[i][j]
+
+
+def Make_Table():
+    print()
+    print(f"{' {:^79} '.format('    12 x 12 Multiplication Table     ')}")
     print(f"{' {:-^79}'.format('')}")
+    for row in range(len(multi_table)):
+        for column in multi_table[row]:
+            print(f"{' | {:>3}'.format(column)}", end='')
+        print(' |')
+        print(f"{' {:-^79}'.format('')}")
+
+
+def MainMenu():
+    print()
+    print('        12x Main Menu')
+    print('=============================')
+    print()
+    print('1 - Multiply')
+    print('2 - Show Table')
+    print('0 - Quit')
+
+
+while True:
+
+    MainMenu()
+    print()
+    menuChoice = input('Menu Choice: ')
+    if menuChoice == "1":
+        print()
+        ii, jj = [int(x)
+                  for x in input("Enter i j (1-12 seperated by a space or tab): ").split()]
+        print(str(ii) + ' x ' + str(jj) + ' = ' + str(Multiply(ii, jj)))
+        print('\n')
+    elif menuChoice == "2":
+        Make_Table()
+    else:
+        break
