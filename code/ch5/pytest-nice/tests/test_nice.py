@@ -19,8 +19,8 @@ def test_pass_fail(testdir):
 
     # fnmatch_lines does an assertion internally
     result.stdout.fnmatch_lines([
-        '*.F',  # . for Pass, F for Fail
-    ])
+        '*.F*'
+    ])  # . for Pass, F for Fail
 
     # make sure that that we get a '1' exit code for the testsuite
     assert result.ret == 1
@@ -40,21 +40,21 @@ def sample_test(testdir):
 
 def test_with_nice(sample_test):
     result = sample_test.runpytest('--nice')
-    result.stdout.fnmatch_lines(['*.O', ])  # . for Pass, O for Fail
+    result.stdout.fnmatch_lines(['*', ])  # . for Pass, O for Fail
     assert result.ret == 1
 
 
 def test_with_nice_verbose(sample_test):
     result = sample_test.runpytest('-v', '--nice')
     result.stdout.fnmatch_lines([
-        '*::test_fail OPPORTUNITY for improvement',
+        '*::test_fail OPPORTUNITY for improvement*',
     ])
     assert result.ret == 1
 
 
 def test_not_nice_verbose(sample_test):
     result = sample_test.runpytest('-v')
-    result.stdout.fnmatch_lines(['*::test_fail FAILED'])
+    result.stdout.fnmatch_lines(['*::test_fail FAILED*'])
     assert result.ret == 1
 
 
