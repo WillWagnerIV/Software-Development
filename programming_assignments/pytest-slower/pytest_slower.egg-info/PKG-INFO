@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pytest-slower
+Version: 0.1.0
+Summary: A pytest plugin to turn to test Slower
+Home-page: https://wherever/you/have/info/on/this/package
+Author: Will Wagner
+Author-email: your_email@somewhere.com
+License: proprietary
+Description: UNKNOWN
+Platform: UNKNOWN

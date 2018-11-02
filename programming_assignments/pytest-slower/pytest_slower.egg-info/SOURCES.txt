@@ -1,0 +1,8 @@
+pytest_slower.py
+setup.py
+pytest_slower.egg-info/PKG-INFO
+pytest_slower.egg-info/SOURCES.txt
+pytest_slower.egg-info/dependency_links.txt
+pytest_slower.egg-info/entry_points.txt
+pytest_slower.egg-info/requires.txt
+pytest_slower.egg-info/top_level.txt
