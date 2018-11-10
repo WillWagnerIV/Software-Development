@@ -30,6 +30,15 @@ Run the Python interpreter (make sure you are still in your virtualenv if you ar
 And then import the module and print out the name property.
 
 >>> import answer_pkg_ex
+
 >>> answer_pkg_ex.name
 
 'answer_pkg_ex'
+
+## Package Use
+
+The package only has one callable function named provide_insight()
+
+    import answer_pkg_ex
+
+    answer_pkg_ex.provide_insight()
