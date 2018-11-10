@@ -4,14 +4,18 @@ This is a simple example package.
 
 ## About
 
-This package provides a most basic setup example of an installable package.  As a bonus it also provides the answer to Life, the Universe and Everything.
+This package provides a most basic setup example of an installable package.  As a bonus it also provides the answer to Life, the Universe and Everything.  Make sure to call the function provide_insight() after installation.
 
 
 ## Installation Instructions
 
+testPyPi erases its content without warning to create space for new test projects.  If there are any errors with testPyPi, please use the tar package instructions.
+
+### testPyPi Installation ( Easiest )
+
 You can use pip to install from TestPyPI:
 
-1.) cd to your working directory
+1.) cd to your working directory.
 
     cd path/to/awesomeness
 
@@ -23,6 +27,19 @@ You can use pip to install from TestPyPI:
 
     python3 -m pip install --index-url https://test.pypi.org/ answer_pkg_ex
 
+### tar Package Installation
+
+1.) You can download the tar archive here:
+
+    https://github.com/WillWagnerIV/Software-Development/tree/master/programming_assignments/answer_pkg_ex/dist/
+
+2.) cd to your working directory.
+
+    cd path/to/awesomeness
+
+3 use pip to install the archive.  The following is example code.  Please change the version to match your download.
+
+    python3 -m pip install python3 -m pip install answer_pkg_ex-0.0.11.tar.gz
 
 ## Test Installation
 
