@@ -15,10 +15,15 @@ This package provides a most basic setup example of an installable package.  As 
 You can use pip to install from TestPyPI:
 
 1. cd to your working directory
+
     cd path/to/awesomeness
+
 2. Activate your virtual env
+
     env/bin/activate
+
 3. Install with the following command
+
     python3 -m pip install --index-url https://test.pypi.org/ answer_pkg_ex
 
 
