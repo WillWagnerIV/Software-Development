@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="answer_pkg_ex",
-    version="0.0.12",
+    version="0.0.13",
     author="Will Wagner",
     author_email="william.wagner@cgu.edu",
     description="A small example package that provides the answer to Life the Universe and Everything.",
