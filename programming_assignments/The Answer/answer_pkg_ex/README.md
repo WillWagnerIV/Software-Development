@@ -10,7 +10,6 @@ Github Markdown reference:
 This package provides a most basic setup example of an installable package.  As a bonus it also provides the answer to Life, the Universe and Everything.
 
 
-
 ## Installation Instructions
 
 You can use pip to install from TestPyPI:
