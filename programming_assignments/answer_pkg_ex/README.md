@@ -15,23 +15,25 @@ This package provides a most basic setup example of an installable package.  As 
 You can use pip to install from TestPyPI:
 
 1. cd to your working directory
+    cd path/to/awesomeness
 2. Activate your virtual env
-3. python3 -m pip install --index-url https://test.pypi.org/ answer_pkg_ex
+    env/bin/activate
+3. Install with the following command
+    python3 -m pip install --index-url https://test.pypi.org/ answer_pkg_ex
 
 
 ## Test Installation
 
 You can test that it was installed correctly by importing the module and referencing the name property.
 
-Run the Python interpreter (make sure you are still in your virtualenv if you are using one):
+Start your Python interpreter (make sure you are still in your virtualenv if you are using one):
 
->>> python
+    ipython
 
 And then import the module and print out the name property.
 
->>> import answer_pkg_ex
-
->>> answer_pkg_ex.name
+    import answer_pkg_ex
+    answer_pkg_ex.name
 
 'answer_pkg_ex'
 
