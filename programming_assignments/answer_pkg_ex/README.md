@@ -43,7 +43,7 @@ And then import the module and print out the name property.
 
 ### provide_insight()
 
-The package only has one callable function named __provide_insight()__
+The package's only callable function is named __provide_insight()__.  Import it and call it like this:
 
     import answer_pkg_ex
 
