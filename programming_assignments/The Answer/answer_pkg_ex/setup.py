@@ -11,7 +11,7 @@ setuptools.setup(
     description="A small example package that provides the answer to Life the Universe and Everything.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/WillWagnerIV/Software-Development/tree/master/programming_assignments/answer_pkg",
+    url="https://github.com/WillWagnerIV/Software-Development/tree/master/programming_assignments/",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
