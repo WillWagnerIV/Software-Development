@@ -3,9 +3,6 @@
 # Nov. 9, 1018
 
 
-
-
-
         
 class BigQ:
 
@@ -28,8 +25,6 @@ class BigQ:
             print ('\nIncorrect.')  
             print ('Please restart your World or contact Magrathean Technical Support if the problem persists.')
 
-    
-    
 
 
 
@@ -43,5 +38,3 @@ def provide_insight():
 
         if BigQ.give_response (user_answer) == False:
             insight_main_looping = False
-
-
