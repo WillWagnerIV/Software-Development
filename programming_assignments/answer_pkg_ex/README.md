@@ -33,15 +33,17 @@ You can use pip to install from TestPyPI:
 
   <https://github.com/WillWagnerIV/Software-Development/tree/master/programming_assignments/answer_pkg_ex/dist/>
 
-2.) cd to your working directory.
+2.) copy the downloaded tar to your working directory
+
+3.) cd to your working directory.
 
     cd path/to/awesomeness
 
-3.) Activate your virtual env
+4.) Activate your virtual env
 
     env/bin/activate
 
-4.) use pip to install the archive.  The following is example code.  Please change the version to match your download.
+5.) use pip to install the archive.  The following is example code.  Please change the version to match your download.
 
     python3 -m pip install python3 -m pip install answer_pkg_ex-0.0.13.tar.gz
 
