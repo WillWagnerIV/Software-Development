@@ -1,7 +1,7 @@
 # Will Wagner
 # IST303
 
-
+import dateutil
 from datetime import date
 from dateutil.relativedelta import relativedelta
 import pytest
@@ -60,7 +60,7 @@ class SavingsAccount(BankAccount):
         if self.creation_date != "None":
             if amount <= self.balance:
                 print('Balance Check Passed')
-                if self.creation_date <= date_today - relativedelta(months=+6):
+                if self.creation_date <= date_today - dateutil.relativedelta(months=+6):
                     print('Date Check Passed')
                     self.set_balance = self.balance - amount
 
